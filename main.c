@@ -258,12 +258,7 @@ int main(void)
 				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,0);
 			}
 			if(humid<t_humid){
-				if (PH<5.8 || PH>8){
-				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,0);
-				}
-				else{
 				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,1);
-				}
 			}
 			else{
 				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,0);
